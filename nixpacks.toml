@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["gcc"]
+
+[phases.build]
+cmds = ["g++ main.cpp -o main -pthread"]
+
+[start]
+cmd = "./main"
